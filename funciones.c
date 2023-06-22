@@ -21,6 +21,14 @@ float calcularArea(float a, float b, float c){ //paso por valor sin punteros
     float area = sqrt(s*(s-a)*(s-b)*(s-c)); 
     return area;
 }
-float calcularVolumen(){
-    return;
+float calcularVolumen(float puntos [4][4], float a /*float *h*/){ 
+    /*
+    float barx = (puntos[0][0]+puntos[1][0]+puntos[2][0])/3;
+    float bary = (puntos[0][1]+puntos[1][1]+puntos[2][1])/3;
+    float barz = (puntos[0][2]+puntos[1][2]+puntos[2][2])/3;
+    *h = calcularDistancia(barx, bary,barz, puntos [3][0], puntos [3][1], puntos [3][2]);
+    float alt = *h;
+    */
+    float volumen = ((pow(a,3))*sqrt(2))/12;
+    return volumen;
 }
